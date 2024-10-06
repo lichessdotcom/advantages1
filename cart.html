@@ -381,40 +381,62 @@ body {
        
     }
     .title_big_container{
-        background-color: #f9f9f9;
+        background-color: #ddd;
         border:1px solid black;
         height:60px;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
+       
         
         
        
 
     }
     .title_big_container1{
-        background-color: #5aa6e9;
+        background-color: #f2f2f2;
         text-align: center;
         width:100px;
         display:flex;
         align-items: center;
         justify-content: center;
+        width:100%;
+        font-weight: bold;
+        border-left:1px solid #d4d3d3 ;
     }
     .workspace1{
-        border:1px solid black;
+        
+        border-left:1px solid #d4d3d3 ;
         height:100px;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
     }
-    .title_big_container2{
-        background-color: rgb(201, 201, 201);
+    .workspace1_stt,
+    .workspace1_hinhanh,
+    .workspace1_tensp,
+    .workspace1_soluong,
+    .workspace1_gia,
+    .workspace1_delete{
+        
+        text-align: center;
+        width:100%;
         display:flex;
         align-items: center;
         justify-content: center;
-
+        
+    }
+    #delete_button{
+        border:1px solid #e74c3c;
+        background-color: #e74c3c;
+        padding:4px 8px 4px 8px;
+        color:white;
+    }
+    #delete_button:hover{
+        opacity:0.8;
+        
     }
 
 </style>
@@ -458,25 +480,45 @@ body {
      </div>
      <div class="big_container">
         <div class="title_big_container">
-            <div class="title_big_container1">Stt</div>
-            <div class="title_big_container1">hình ảnh</div>
-            <div class="title_big_container1">tên sản phẩm</div>
-            <div class="title_big_container1">số lượng </div>
-            <div class="title_big_container1">đơn giá</div>
-            <div class="title_big_container1">hành động</div>
+            <div class="title_big_container1">STT</div>
+            <div class="title_big_container1">HÌNH ẢNH</div>
+            <div class="title_big_container1">TÊN SẢN PHẨM</div>
+            <div class="title_big_container1">SỐ LƯỢNG</div>
+            <div class="title_big_container1">ĐƠN GIÁ</div>
+            <div class="title_big_container1">HÀNH ĐỘNG</div>
 
         </div>
 
         <div class="workspace1">
-            <div class="title_big_container2">1</div>
-            <div class="title_big_container2"><img src="https://bizweb.dktcdn.net/thumb/medium/100/382/646/products/but-bi-fo-038-02-13e7bb3b89214075adb154d7e2869488.jpg?v=1586073812100" width="50px"height="50px"></div>
-            <div class="title_big_container2">but bi</div>
-            <div class="title_big_container2">5 </div>
-            <div class="title_big_container2">10000</div>
-            <div class="title_big_container2">delete</div>
+            <div class="workspace1_stt">1</div>
+            <div class="workspace1_hinhanh"><img src="https://bizweb.dktcdn.net/thumb/medium/100/382/646/products/but-bi-fo-038-02-13e7bb3b89214075adb154d7e2869488.jpg?v=1586073812100" width="50px"height="50px"></div>
+            <div class="workspace1_tensp">but bi</div>
+            <div class="workspace1_soluong">5 </div>
+            <div class="workspace1_gia">10000</div>
+            <div class="workspace1_delete">
+                <button id="delete_button">XÓA</button>
+            </div>
         </div>
-        <div class="workspace1"></div>
-        <div class="workspace1"></div>
+        <div class="workspace1">
+            <div class="workspace1_stt">1</div>
+            <div class="workspace1_hinhanh"><img src="https://bizweb.dktcdn.net/thumb/medium/100/382/646/products/but-bi-fo-038-02-13e7bb3b89214075adb154d7e2869488.jpg?v=1586073812100" width="50px"height="50px"></div>
+            <div class="workspace1_tensp">but bi</div>
+            <div class="workspace1_soluong">5 </div>
+            <div class="workspace1_gia">10000</div>
+            <div class="workspace1_delete">
+                <button id="delete_button">XÓA</button>
+            </div>
+        </div>
+        <div class="workspace1">
+            <div class="workspace1_stt">1</div>
+            <div class="workspace1_hinhanh"><img src="https://bizweb.dktcdn.net/thumb/medium/100/382/646/products/but-bi-fo-038-02-13e7bb3b89214075adb154d7e2869488.jpg?v=1586073812100" width="50px"height="50px"></div>
+            <div class="workspace1_tensp">but bi</div>
+            <div class="workspace1_soluong">5 </div>
+            <div class="workspace1_gia">10000</div>
+            <div class="workspace1_delete">
+                <button id="delete_button">XÓA</button>
+            </div>
+        </div>
      </div>
     
 </body>

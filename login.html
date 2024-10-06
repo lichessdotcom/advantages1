@@ -14,7 +14,7 @@
         }
 
         body {
-            background-image: url('https://example.com/your-background-image.jpg'); /* Thay đường dẫn hình nền bằng của bạn */
+            background-image: url('https://example.com/your-background-image.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -25,11 +25,12 @@
         }
 
         .container {
-            background: rgba(64, 64, 64, 0.75);
+            background: rgba(0, 0, 0, 0.75);
             padding: 40px;
             border-radius: 0px;
             width: 400px;
             text-align: center;
+            border-radius: 10px;
         }
 
         h1 {
@@ -64,6 +65,15 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .checkbox-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+        }
 
        
 
@@ -80,10 +90,15 @@
         <form action="your-login-endpoint" method="POST">
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Password" required>
+            <div class="checkbox-wrapper">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Need help?</a>
+            </div>
             <button type="submit">ĐĂNG NHẬP</button>
             <div class="signup">
-                <a href="#">ĐĂNG KÍ?</a>
+                <a href="../baicuoikhoaadvantage2/DANGKI.HTML">ĐĂNG KÍ?</a>
             </div>
+
             
         </form>
         
