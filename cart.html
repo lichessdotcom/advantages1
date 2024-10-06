@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        
+    .giaodien{
+
+background-color: rgb(90, 166, 233);
+}
+.real_giaodien{
+border-top:1.5px solid black ;
+display: flex;
+flex-direction: row;
+height:50px;
+background-color: rgb(90, 166, 233);   
+margin-left: 120px;
+}
+
+.button_giaodien{
+
+
+
+padding-right:10px ;
+padding-left: 10px;
+background-color: rgb(90, 166, 233);
+}
+
+#b_giaodien1{
+background-color: rgb(60, 152, 233)
+}
+#name{
+color: aliceblue;
+font-size: 15px;
+margin:0;
+display:flex;
+justify-content: center;
+align-items: center;
+padding-top:5px;
+}
+
+
+.thanh_dautien{
+background-color: rgb(255, 255, 255);
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+height:80px;
+}
+
+
+.CART{
+display: flex;
+flex-direction: row;
+margin-top: 20px;
+}
+#img_CART{
+border-radius: 100%;
+}
+.CART_NAME{
+margin-top: 10px;
+}
+.FAVORITE_PRODUCT{
+display: flex;
+flex-direction: row;
+margin-top: 20px;
+}
+.PRODUCT_NAME{
+margin-top: 10px;
+}
+
+.search_{
+height:35px;
+width:500px;
+
+border: 3px solid black;
+}
+.submit_find{
+height:41.5px;
+background-color: rgb(95, 151, 151);
+color:white;
+border: 3px solid black;
+}
+.search-container{
+display: flex;
+margin-top: 20px;
+}
+
+
+
+
+.ACCOUNT{
+display:flex;
+flex-direction: row;
+margin-top: 20px;
+margin-right: 200px;
+}
+.ACCOUNT_NAME{
+margin-top:10px;
+}
+
+
+#web_logo{
+margin-left: 200px;
+margin-top: 15px;
+}
+
+
+.all_product{
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+height:1000px;
+width:100%;
+
+
+}
+
+.left_part{
+background-color: aqua;
+flex:0.2;
+}
+.right_part{
+background-color: rgb(158, 124, 190);
+flex:0.2;
+}
+
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        height:700px;
+        
+    }
+
+    /* Phần bên trái chứa ảnh sản phẩm */
+    .left_part {
+        background-color: rgb(226, 226, 226);
+       
+
+    }
+
+    /* Phần giữa hiển thị thông tin chính */
+    .middle_part {
+        flex: 0.6;
+        display:flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        
+        
+    }
+    .sanphamsection1 {
+        display: flex;
+        
+        align-items: start;
+        width:100%;
+        
+        
+    }
+
+    .sanphamsection1 img {
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .product_info {
+        text-align: left;
+        width: 100%;
+        padding-left: 50px;
+        border-left:1px solid black;
+    }
+
+    .product_info h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .product_info .details {
+        margin-bottom: 15px;
+    }
+
+    .product_info .details span {
+        font-weight: bold;
+    }
+
+    .colors {
+        display: flex;
+        gap: 10px;
+        margin-top:10px;
+    }
+
+    .color_option {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    .color_option.selected {
+        border: 2px solid red;
+    }
+    .price{
+        color:red;
+        font-size: 30px;
+    }
+    .cart_button{
+        display:flex;
+        flex-direction: row;
+        height:45px;
+        
+        margin-top: 10px;
+    }
+    .cart_button_quanlity{
+        display: flex;
+        flex-direction: row;
+        width:150px;
+        justify-content:space-between;
+    }
+    .cart_button_add{
+        background-color: #44a9d5;
+        width:150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        text-transform: uppercase;
+        font-weight:bold;
+    }
+    .cart_button_plus{
+        background-color:rgb(255, 255, 255);
+        
+        font-size: 25px;
+        flex:0.3;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .cart_button_minus{
+        background-color: rgb(255, 255, 255);
+        
+        font-size:25px;
+        flex:0.3;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .cart_button_number{
+        background-color: rgb(255, 255, 255);
+        flex:0.4;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mota_sanpham{
+        margin-top:30px;
+    }
+    .mota_sanpham{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .mota_sanpham1_title{
+        display:flex;
+        flex-direction: row;
+        height:40px;
+        
+
+    }
+    .mota_sanpham1_title_name{
+        border:1px solid gray;
+        background-color: #f6f6f6;
+        width:150px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:10px;
+    }
+    .mota_sanpham2_title_name{
+        border:1px solid gray;
+        background-color: #f6f6f6;
+        width:150px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:10px;
+    }
+    .mota_sanpham3_title_name{
+        border:1px solid gray;
+        background-color: #f6f6f6;
+        width:150px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:10px;
+        
+
+    }
+    .mota_sanpham2_title{
+        display:flex;
+        flex-direction: row;
+        margin-top:6px;
+        height:40px;
+
+    }
+    .mota_sanpham3_title{
+        display:flex;
+        flex-direction: row;
+        margin-top:6px;
+        height:40px;
+        
+
+    }
+    .mota_sanpham1_title_mota{
+        margin-top: 9px;
+    }
+    .mota_sanpham2_title_mota{
+        margin-top: 9px;
+    }
+    .mota_sanpham3_title_mota{
+        margin-top: 9px;
+    }
+    .mota_sanpham_title{
+        border:1px solid black;
+        margin-right:800px;
+        padding-top:10px;
+        padding-left:20px;
+        padding-bottom:10px;
+        
+    }
+    .mota_sanpham4_title{
+        margin-top:30px;
+    }
+    
+
+    /* Phần bên phải hiển thị thông tin liên hệ */
+    .right_part {
+        flex: 0.2;
+        background-color: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .right_part .contact_info {
+        margin-bottom: 20px;
+    }
+
+    .right_part .contact_info h3 {
+        color: red;
+        font-size: 24px;
+    }
+
+    .right_part .contact_button {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Một số thiết kế cơ bản */
+    .button_giaodien {
+        padding: 10px;
+        background-color: #5aa6e9;
+        color: white;
+        cursor: pointer;
+    }
+    .big_container{
+        border:1px solid black;
+        height:900px;
+        width:100%;
+        
+       
+    }
+    .title_big_container{
+        background-color: #f9f9f9;
+        border:1px solid black;
+        height:60px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        
+        
+       
+
+    }
+    .title_big_container1{
+        background-color: #5aa6e9;
+        text-align: center;
+        width:100px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .workspace1{
+        border:1px solid black;
+        height:100px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .title_big_container2{
+        background-color: rgb(201, 201, 201);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+</style>
+<body>
+    <div class="thanh_dautien">
+        <img id="web_logo"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWxjR9pHTYVgSlxvBckf5Z0mRSb9D-DCZO0H87_pSJ8vUpr68PVJ2v6v8nV3Sj-Sfe6_k&usqp=CAU"width="50px"height="50px">
+        
+        <div class="search-container">
+            <input class="search_" type="text" placeholder="TÌM KIẾM">
+            <button class="submit_find" type="submit">FIND</button>
+        </div>
+        
+        <div class="CART">
+            <div class="CART_LOGO"><IMG id=img_CART SRC="https://img.lovepik.com/free-png/20220125/lovepik-shopping-cart-png-image_401703346_wh860.png"width="40px"height="40px" ></div>
+            <div class="CART_NAME">Cart</div>
+        </div>
+        
+        <div class="FAVORITE_PRODUCT">
+            <div class="FAVORITE_PRODUCT_LOGO"><IMG id=img_CART SRC="https://img.freepik.com/premium-vector/vector-design-favorite-icon-style_1134108-4713.jpg"width="40px"height="40px" ></div>
+            <div class="PRODUCT_NAME">Yêu thích</div>
+        </div>
+        
+        <div class="ACCOUNT">
+            <div class="ACCOUNT_LOGO"><img id=img_CART src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN9lZxcVeTkoj27911KSV__OmKqgFRYhMTUw&s" width="40px"height="40px"></div>
+            <DIV CLASS="ACCOUNT_NAME">Tài khoản</DIV>
+        </div>
+    
+    </div>
+    <div class="giaodien">
+        <div class="real_giaodien">
+            <div class="button_giaodien" id="b_giaodien1"><h3 id="name">DANH MỤC SẢN PHẨM</h3></div>
+            <div class="button_giaodien"><h3 id="name">TRANG CHỦ</h3></div>
+            <div class="button_giaodien"><h3 id="name">SẢN PHẨM</h3></div>
+            <div class="button_giaodien"><h3 id="name">KHUYẾN MÃI</h3></div>
+            <div class="button_giaodien"><h3 id="name">ĐẶT HÀNG</h3></div>
+        </div>
+        
+        
+
+
+     </div>
+     <div class="big_container">
+        <div class="title_big_container">
+            <div class="title_big_container1">Stt</div>
+            <div class="title_big_container1">hình ảnh</div>
+            <div class="title_big_container1">tên sản phẩm</div>
+            <div class="title_big_container1">số lượng </div>
+            <div class="title_big_container1">đơn giá</div>
+            <div class="title_big_container1">hành động</div>
+
+        </div>
+
+        <div class="workspace1">
+            <div class="title_big_container2">1</div>
+            <div class="title_big_container2"><img src="https://bizweb.dktcdn.net/thumb/medium/100/382/646/products/but-bi-fo-038-02-13e7bb3b89214075adb154d7e2869488.jpg?v=1586073812100" width="50px"height="50px"></div>
+            <div class="title_big_container2">but bi</div>
+            <div class="title_big_container2">5 </div>
+            <div class="title_big_container2">10000</div>
+            <div class="title_big_container2">delete</div>
+        </div>
+        <div class="workspace1"></div>
+        <div class="workspace1"></div>
+     </div>
+    
+</body>
+</html>

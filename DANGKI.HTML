@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        
+        width:500px;
+        height:500px;
+        margin-top:100px;
+        background-color: rgba(64, 64, 64, 0.75);
+        box-shadow: 10px 6px 20px 10px rgba(0, 0, 0, 0.2);
+        
+        
+        
+
+    }
+    h1{
+        text-align: center;
+        color:white;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+   
+    
+    
+    input[ type="email"]{
+        
+        padding:10px 60px 10px 60px;
+        background-color: #333;
+        color:white;
+        font-weight: bold;
+        font-size: 15px;
+        border:0;
+    }
+    input[ type="password"]{
+        
+        
+        padding:10px 60px 10px 60px;
+        background-color: #333;
+        color:white;
+        font-weight: bold;
+        font-size: 15px;
+        border:0;
+    }
+    input[ type="phone number"]{
+        padding:10px 60px 10px 60px;
+        background-color: #333;
+        color:white;
+        font-weight: bold;
+        font-size: 15px;
+        border:0;
+    }
+    .hold{
+        display:flex;
+        flex-direction: column;
+        width:400px;
+        margin-top:30px;
+        padding:0;
+    }
+    .hold1{
+        margin-top:20px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    form{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .signup{
+        margin-top:5px;
+    }
+    .te{
+        margin:0;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .submit_button{
+        padding:10px 120px 10px 120px;
+        background-color: red;
+        border:0;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        font-weight: bold;
+    }
+    
+
+</style>
+<body>
+
+    <div class="container">
+        <h1>ĐĂNG KÍ</h1>
+        <form action="your-login-endpoint" method="POST">
+            <div class="hold">
+                <h3 class="te">Email</h3>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="hold">
+                <h3 class="te">Password</h3>
+                <input type="password" placeholder="Create new password" required>
+            </div>
+            <div class="hold">
+                <h3 class="te">Phone number</h3>
+                <input type="phone number" placeholder="phone number" required>
+            </div>
+            
+            <div class="hold1">
+            <button type="submit" class="submit_button">ĐĂNG KÍ</button>
+            <div class="signup">
+                <a href="#">ĐĂNG NHẬP?</a>
+            </div>                
+            </div>
+
+            
+        </form>
+        
+    </div>
+        
+    </form>
+</body>
+</html>
